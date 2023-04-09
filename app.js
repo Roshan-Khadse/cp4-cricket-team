@@ -129,13 +129,13 @@ app.put("/todos/:todoId/", async (request, response) => {
 
   switch (true) {
     case requestBody.status !== undefined:
-      updateColumn = "status";
+      updateColumn = "Status";
       break;
     case requestBody.priority !== undefined:
-      updateColumn = "priority";
+      updateColumn = "Priority";
       break;
     case requestBody.todo !== undefined:
-      updateColumn = "todo";
+      updateColumn = "Todo";
       break;
   }
   const previousTodoQuery = `
